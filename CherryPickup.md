@@ -2,9 +2,9 @@
 Basic problem: 
 - The robots need to collect maximum cherries.
 - the robots can move in just 3 directions -> 
-- - diagonal left
-- - bottom
-- - diagonal right
+-- diagonal left
+-- bottom
+-- diagonal right
 ```
 class Solution {
 public:
