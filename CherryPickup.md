@@ -1,10 +1,34 @@
 ## Solution based on intuition!
 Basic problem: 
 - The robots need to collect maximum cherries.
-- the robots can move in just 3 directions -> 
--- diagonal left
--- bottom
--- diagonal right
+- The robots can move in just 3 directions -> 
+   - diagonal left
+   - bottom
+   - diagonal right
+<hr>   
+### Solution:
+- we can see this is a DP problem, as it has optimal substructure, and it has similar sub-problems.
+  #### let's breakdown the problems:
+  - We need to decide the dimentions: it is decided on the basis of **parameters** that we pass to a **recursive function calls** *i.e if one parameter changing in the recursive calls then 1D, if two params are changing then 2D, if three then 3D.*
+  - So, for this we need 3 dimentions.
+  - **ROBOTS CAN MOVE SIMULTANEOUSLY!!!**
+ 
+### Possible movements!!!
+- There are total 9 possible movements.
+- In this r1=r2, meaning that both robots are moving down simultaneously. 
+
+```
+            dp[r - 1][c1 - 1][c2 - 1],
+            dp[r - 1][c1 - 1][c2],
+            dp[r - 1][c1 - 1][c2 + 1],
+            dp[r - 1][c1][c2 - 1],
+            dp[r - 1][c1][c2],
+            dp[r - 1][c1][c2 + 1],
+            dp[r - 1][c1 + 1][c2 - 1],
+            dp[r - 1][c1 + 1][c2],
+            dp[r - 1][c1 + 1][c2 + 1]
+```
+- We need to return the maximum of these moves, such that it results in maximum cherries. 
 ```
 class Solution {
 public:
