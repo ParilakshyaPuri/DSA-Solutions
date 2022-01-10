@@ -108,4 +108,4 @@ public:
     }
 };
 ```
-***Hope this helps! if it does, kindly star it, thta'll motivate me to make more of such posts!!***
+***Hope this helps! if it does, kindly star it, that'll motivate me to make more of such posts!!***
