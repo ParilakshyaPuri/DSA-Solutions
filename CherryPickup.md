@@ -5,14 +5,18 @@ Basic problem:
    - diagonal left
    - bottom
    - diagonal right
-<hr>   
+   
+<hr>  
+
 ### Solution:
 - we can see this is a DP problem, as it has optimal substructure, and it has similar sub-problems.
   #### let's breakdown the problems:
   - We need to decide the dimentions: it is decided on the basis of **parameters** that we pass to a **recursive function calls** *i.e if one parameter changing in the recursive calls then 1D, if two params are changing then 2D, if three then 3D.*
   - So, for this we need 3 dimentions.
   - **ROBOTS CAN MOVE SIMULTANEOUSLY!!!**
- 
+
+<hr>
+
 ### Possible movements!!!
 - There are total 9 possible movements.
 - In this r1=r2, meaning that both robots are moving down simultaneously. 
@@ -29,6 +33,26 @@ Basic problem:
             dp[r - 1][c1 + 1][c2 + 1]
 ```
 - We need to return the maximum of these moves, such that it results in maximum cherries. 
+
+<hr>
+
+### Incase there was a clash where robots are in same cell.
+dp[r][c1][c2];
+
+**HOW TO DECIDE WHICH ROBOT GETS THE CHERRIES?**
+```
+ if(c1==c2){
+      cherry+=grid[r1][c1];
+ }
+else{
+      cherry+=grid[r1][c1];
+      cherry+=grid[r1][c2];
+}
+```
+<hr>
+
+## Combining all into the code!
+
 ```
 class Solution {
 public:
