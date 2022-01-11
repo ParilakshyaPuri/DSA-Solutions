@@ -13,7 +13,7 @@ Basic problem:
 ### Solution:
 - we can see this is a DP problem, as it has optimal substructure, and it has similar sub-problems.
   #### let's breakdown the problems:
-  - We need to decide the dimentions: it is decided on the basis of **parameters** that we pass to a **recursive function calls** *i.e if one parameter changing in the recursive calls then 1D, if two params are changing then 2D, if three then 3D.*
+  - We need to decide the dimentions: it is decided on the basis of **parameters** that we pass to a **recursive function calls** *i.e if one parameter changing in the recursive calls then 1D, if two parameters are changing then 2D, if three then 3D.*
   - So, for this we need 3 dimentions.
   - **ROBOTS CAN MOVE SIMULTANEOUSLY!!!**
 
