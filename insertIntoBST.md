@@ -1,6 +1,6 @@
 ### Problem Link: https://leetcode.com/problems/insert-into-a-binary-search-tree/
 <br>
-###Solution: 
+### Solution: 
 The solution is pretty straight forward.
 - if val is less than root->val, then go left.
 - if val is more than root->val, then go right.
