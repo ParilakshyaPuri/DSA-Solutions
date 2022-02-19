@@ -1,11 +1,11 @@
 ### APPROACH
 ```
 It's a simple question that can be done by using only arrays. 
-- First sort the array (a) and if a[0]%2 == 1 then a[0]*=2.
-- and if a[n-1]%2 == 0 then a[n-1]/=2. make a variable d = a[n-1]-a[0];
-- Keep updating d as, d= min(d, a[n-1]-a[0]).
-But in this question, the constraints state- 1 <= nums[i] <= 109
-So, we'll get a TLE if we use arrays, therefore we'll use set instead. 
+- First sort the array (a) and if **a[0]%2 == 1 then a[0]*=2**.
+- and if **a[n-1]%2 == 0** then **a[n-1]/=2**. make a variable **d = a[n-1]-a[0];**
+- Keep updating d as, **d= min(d, a[n-1]-a[0])**.
+But in this question, the constraints state- **1 <= nums[i] <= 109**
+So, we'll get a **TLE** if we use arrays, therefore we'll use set instead. 
 ```
 
 ### SOLUTION:
@@ -32,4 +32,4 @@ int minimumDeviation(vector<int>& nums) {
         return d;
     }
 ```
-Hope it helps!!🌞
+***Hope it helps!!🌞***
