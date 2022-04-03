@@ -3,9 +3,7 @@
 ## Solution: (In Place merge)
 
 > This solution includes optimization on space to modify the input itself where you can directly merge in-place. 
-> We could keep track of length of sorted sub-list in intervals in an variable R (right end of sorted list formed till now). 
-> We would just replace last interval of sorted list denoted by ans.back() in previous approach with I[R] 
-   since we are merging inplace.
+> We could keep track of length of sorted sub-list in intervals in an variable r (right end of sorted list formed till now). 
 
 ## CODE:
 ```
