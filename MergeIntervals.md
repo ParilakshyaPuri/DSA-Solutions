@@ -24,4 +24,7 @@ public:
 };
 ```
 
+Time Complexity : O(NlogN)
+Space Complexity : O(sort)
+
 **Hope this helps! if it does, kindly ⭐ it, that'll motivate me to make more of such posts!! 🌈🌞**
